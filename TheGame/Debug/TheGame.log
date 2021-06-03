@@ -1,29 +1,44 @@
-﻿  ColliderObject.cpp
-C:\Users\Serge\source\repos\TheGame\TheGame\DrawableObj.h(35,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+﻿  Bus.cpp
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\DrawableObj.h(35,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\Serge\source\repos\TheGame\TheGame\DrawableObj.h(35,45): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\DrawableObj.h(35,45): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-  main.cpp
-C:\Users\Serge\source\repos\TheGame\TheGame\DrawableObj.h(35,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.h(20): warning C4091: 'typedef ': ignored on left of 'Bus::Position' when no variable is declared
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.h(43,1): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.cpp(7,16): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\Serge\source\repos\TheGame\TheGame\DrawableObj.h(35,45): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.cpp(8,16): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\Serge\source\repos\TheGame\TheGame\Bus.h(13,20): warning C4584: 'Bus': base-class 'ICollider' is already a base-class of 'DrawableObj'
-C:\Users\Serge\source\repos\TheGame\TheGame\ICollider.h(3): message : see declaration of 'ICollider'
-C:\Users\Serge\source\repos\TheGame\TheGame\DrawableObj.h(11): message : see declaration of 'DrawableObj'
-C:\Users\Serge\source\repos\TheGame\TheGame\Bus.h(96,13): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
-C:\Users\Serge\source\repos\TheGame\TheGame\Bus.h(101,13): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
-  Generating Code...
-  TheGame.vcxproj -> C:\Users\Serge\source\repos\TheGame\Debug\TheGame.exe
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.cpp(27,27): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.cpp(35,28): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.cpp(43,25): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.cpp(51,24): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  TheGame.vcxproj -> C:\Users\Serge\source\repos\TheGame\TheGameActual\Debug\TheGame.exe

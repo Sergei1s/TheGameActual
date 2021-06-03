@@ -12,25 +12,30 @@ void ObjectPool::Remove(DrawableObj* obj)
 	pool.remove(obj);
 }
 
-DrawableObj* ObjectPool::begin()
+auto ObjectPool::begin()
 {
-	return *(pool).begin();
+	return pool.begin();
 }
 
-//auto ObjectPool::end()
-//{
-//	return pool.end();
-//}
-DrawableObj* ObjectPool::end()
+auto ObjectPool::end()
 {
-	return *pool.end();
+	return pool.end();
 }
+//DrawableObj* ObjectPool::end()
+//{
+//	return *pool.end();
+//}
 
 
 int ObjectPool::GetSize()
 {
 	return pool.size();
 }
+
+std::list<DrawableObj*> ObjectPool:: getList()
+{
+	return pool;
+};
 
 void Drawer::draw(RenderWindow* window, ObjectPool* pool)
 {
@@ -40,10 +45,11 @@ void Drawer::draw(RenderWindow* window, ObjectPool* pool)
 	
 	for (auto iter = (*pool).begin(); iter != (*pool).end();iter++)
 	{
-		window->draw((iter)->sprite);
+		window->draw((*iter)->sprite);
 	}
 	
 }
+
 
 Drawer::Drawer(ObjectPool* pool)
 {

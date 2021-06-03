@@ -2,6 +2,7 @@
 //#include "Rectangle.h"
 #include "Drawer.h"
 //#include "DrawableObj.h"
+#include < iterator >
 using namespace sf;
 //
 //class ColliderObject : public DrawableObj
@@ -27,19 +28,37 @@ public:
 		ColliderObject* collider2;*/
 
 
-		for (DrawableObj* iter1 = (*pool).begin(); iter1 != (*pool).end(); iter1++)
+		/*for (auto iter1 = (*pool).begin(); iter1 != (*pool).end(); iter1++)
 		{
 
-			for (DrawableObj* iter2 = (*pool).begin(); iter2 != (*pool).end(); iter2++)
+			for (auto iter2 = (*pool).begin(); iter2 != (*pool).end(); iter2++)
 			{
 				if (iter1 != iter2) {
-					if (iter1->sprite.getGlobalBounds().intersects(iter2->sprite.getGlobalBounds())) {
-						iter1->OnCollision(iter2);
-						iter2->OnCollision(iter1);
+					if ((*iter1)->sprite.getGlobalBounds().intersects((*iter2)->sprite.getGlobalBounds())) {
+						(*iter1)->OnCollision(*iter2);
+					}
+				}
+			}
+		}*/
+		for(DrawableObj* iter1: (*pool).getList())
+		{
+			for (DrawableObj* iter2 : (*pool).getList())
+			{
+				if (iter1 != iter2) {
+					if ((iter1)->sprite.getGlobalBounds().intersects((iter2)->sprite.getGlobalBounds())) {
+						
+						if (iter1->GetState())
+						{
+							pool->Remove(iter1);
+						}
+						else
+							(iter1)->OnCollision(iter2);
+						
 					}
 				}
 			}
 		}
+
 		/*for (ColliderObject collider1 : *pool)
 			for (ColliderObject collider2 : *pool) {
 				if (&collider1 != &collider2) {

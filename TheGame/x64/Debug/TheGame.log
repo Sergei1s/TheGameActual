@@ -1,0 +1,93 @@
+﻿  Alien.cpp
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\DrawableObj.h(35,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\DrawableObj.h(35,45): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Bus.cpp
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\DrawableObj.h(35,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\DrawableObj.h(35,45): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.h(13,20): warning C4584: 'Bus': base-class 'ICollider' is already a base-class of 'DrawableObj'
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\ICollider.h(3): message : see declaration of 'ICollider'
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\DrawableObj.h(11): message : see declaration of 'DrawableObj'
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.h(96,13): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.h(101,13): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.cpp(25,26): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.cpp(32,27): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.cpp(39,25): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.cpp(46,23): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  ColliderObject.cpp
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\DrawableObj.h(35,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\DrawableObj.h(35,45): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  EventHandler.cpp
+  IMovable.cpp
+  IPaintable.cpp
+  main.cpp
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\DrawableObj.h(35,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\DrawableObj.h(35,45): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.h(13,20): warning C4584: 'Bus': base-class 'ICollider' is already a base-class of 'DrawableObj'
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\ICollider.h(3): message : see declaration of 'ICollider'
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\DrawableObj.h(11): message : see declaration of 'DrawableObj'
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.h(96,13): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Bus.h(101,13): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  Drawer.cpp
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\DrawableObj.h(35,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\DrawableObj.h(35,45): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Serge\source\repos\TheGame\TheGameActual\TheGame\Drawer.cpp(32,20): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Point.cpp
+  Rectangle.cpp
+  Generating Code...
+sfml-graphics-d.lib(sfml-graphics-d-2.dll) : fatal error LNK1112: module machine type 'x86' conflicts with target machine type 'x64'

@@ -10,13 +10,15 @@ using namespace sf;
 class ObjectPool {
 private:
 	std::list<DrawableObj*> pool;
+
 public:
 	void Add(DrawableObj* obj);
 	void Remove(DrawableObj* obj);
-	DrawableObj* begin();
-	DrawableObj* end();
+	auto begin();
+	auto end();
 	int GetSize();
-
+	std::list<DrawableObj*> getList();
+	
 };
 
 
@@ -27,5 +29,6 @@ public:
 
 	void draw(RenderWindow* window, ObjectPool* pool);
 	
+	//void update(ObjectPool* pool);
 };
 

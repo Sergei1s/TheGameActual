@@ -6,9 +6,14 @@ public:
 	IFillable() {  };
 	~IFillable() {};
 
-	virtual void GetFuel(int _fuel) { fuel += _fuel; };
-
+	//virtual void GetFuel(int _fuel) { currentFuel += _fuel; };
+	virtual void GetFuel(int _fuel)
+	{
+		currentFuel += _fuel;
+		if (currentFuel > maxFuel) currentFuel = maxFuel;
+	};
 protected:
-	int fuel;
+	int currentFuel;
+	int maxFuel;
 };
 

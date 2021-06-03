@@ -1,50 +1,91 @@
-#include "Bus.h"
+﻿#include "Bus.h"
 
 
-
+Vector2f Bus::ToVector2f(Position pos)
+{
+	Vector2f vector;
+	vector.x = pos.x;
+	vector.y = pos.y;
+	return vector;
+}
 
 Bus::Bus()
 {
-	pos.x = 10;
-	pos.y = 10;
+	maxFuel = 100;
+	currentFuel = maxFuel;
+	pos.x = 400;
+	pos.y = 700;
+	spritePosition.x = pos.x;
+	spritePosition.y = pos.y;
 	Bus:: setPath(OriginalBusTexturePath);
 	Bus::setSprite();
 };
 
-//void Bus::setSprite() 
-//{
-//	OriginalBusTexturePath = textureFolderPath + textureTitle;
-//	texture.loadFromFile(OriginalBusTexturePath);
-//	sprite.setTexture(texture);
-//	sprite.setScale(spriteScale);
-//	sprite.setPosition(Vector2f(pos.x, pos.y));
-//}
 
 void Bus::MoveUp() 
 {
-	sprite.move(Vector2f(0, -(*speed)));
+	this->MoveOn(Vector2f(0, -(*speed)));
+	/*sprite.move(Vector2f(0, -(*speed)));
 	Vector2f busPosition = sprite.getPosition();
-	pos = {(int)busPosition.x, (int)busPosition.y};
+	pos = {(int)busPosition.x, (int)busPosition.y};*/
 }
 
 void Bus::MoveDown()
 {
-	sprite.move(Vector2f(0, (*speed)));
+	this->MoveOn(Vector2f(0, (*speed)));
+	/*sprite.move(Vector2f(0, (*speed)));
 	Vector2f busPosition = sprite.getPosition();
-	pos = { (int)busPosition.x, (int)busPosition.y };
+	pos = { (int)busPosition.x, (int)busPosition.y };*/
 }
 
 void Bus::MoveForward()
 {
-	sprite.move(Vector2f( (*speed),0));
+	this->MoveOn(Vector2f((*speed), 0));
+	/*sprite.move(Vector2f( (*speed),0));
 	Vector2f busPosition = sprite.getPosition();
-	pos = { (int)busPosition.x, (int)busPosition.y };
+	pos = { (int)busPosition.x, (int)busPosition.y };*/
 }
 
 void Bus::MoveBack()
 {
-	sprite.move(Vector2f(-(*speed), 0));
-	Vector2f busPosition = sprite.getPosition();
-	pos = { (int)busPosition.x, (int)busPosition.y };
+	this->MoveOn(Vector2f(-(*speed), 0));
+	//sprite.move(this->ToVector2f(this->GetPosition()));
+	/*Vector2f busPosition = sprite.getPosition();
+	pos = { (int)busPosition.x, (int)busPosition.y };*/
 }
+
+void Bus::MoveOn(Vector2f vectorPosition)
+{
+	this->pos.x += (int)vectorPosition.x;
+	this->pos.y += (int)vectorPosition.y;
+	sprite.move(vectorPosition);
+}
+
+void Bus::MoveAt(Vector2f vectorPosition)
+{
+	this->pos.x = (int)vectorPosition.x;
+	this->pos.y = (int)vectorPosition.y;
+	sprite.setPosition(vectorPosition);
+}
+
+Sprite Bus::getSprite()
+{
+	return sprite;
+}
+
+void Bus::SetPosition(Bus::Position nextPosition)
+{
+	this->pos = nextPosition;
+	
+}
+
+
+
+Bus::Position Bus::GetPosition()
+{
+	cout <<"OLD x: "<< this->pos.x;
+	cout << "OLD y: " << this->pos.y;
+	return this->pos;
+}
+
 

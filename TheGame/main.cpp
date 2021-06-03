@@ -4,6 +4,11 @@
 #include "Point.h"
 #include "Drawer.h"
 #include "ColliderObject.h"
+#include "Player.h"
+#include "Fueler.h"
+#include "Obstacle.h"
+#include "BackGroundObj.h"
+
 using namespace sf;
 
 /* TODO
@@ -22,13 +27,19 @@ int main()
 	spawnPoint.SetY(10);
 
 	ObjectPool* pool = new ObjectPool();
-	Bus* bus = new Bus;
-	//bus->sprite.getGlobalBounds().intersects
-	(*pool).Add(bus);
+	//Bus* bus = new Bus;
+	////bus->sprite.getGlobalBounds().intersects
+	//(*pool).Add(bus);
+	
 	Drawer* drawer = new Drawer(pool);
-	
+	Fueler* fueler = new Fueler();
+	Obstacle* obstacle = new Obstacle();
+	BackgroundObject* backgroundObj = new BackgroundObject();
 	Physics* physics = new Physics(pool);
-	
+	pool->Add(backgroundObj);
+	pool->Add(fueler);
+	pool->Add(obstacle);
+	Player* player = new Player(pool);
 	// Главный цикл приложения. Выполняется, пока открыто окно
 	while (window.isOpen())
 	{
@@ -55,26 +66,40 @@ int main()
 				if (event.key.code == Keyboard::Up)
 				{
 					cout << "w";
+					player->getCurrentBus()->MoveUp();
+					//bus->MoveUp();
 					
-					bus->MoveUp();
-					cout<< bus->GetXPosition();
-					cout<<"y: "<<bus->GetYPosition();
 				}
 
 				if (event.key.code == Keyboard::Down)
 				{
 					cout << "D";
-					bus->MoveDown();
+					player->getCurrentBus()->MoveDown();
+					//bus->MoveDown();
 				}
 
 				if (event.key.code == Keyboard::Left)
 				{
-					bus->MoveBack();
+					//bus->MoveBack();
+					player->getCurrentBus()->MoveBack();
 				}
 
 				if (event.key.code == Keyboard::Right)
 				{
-					bus->MoveForward();
+					//bus->MoveForward();
+					player->getCurrentBus()->MoveForward();
+				}
+
+				if (event.key.code == Keyboard::Num1)
+				{
+					//bus->MoveForward();
+					player->ChangeBus(1);
+				}
+
+				if (event.key.code == Keyboard::Num2)
+				{
+					//bus->MoveForward();
+					player->ChangeBus(2);
 				}
 			}
 
