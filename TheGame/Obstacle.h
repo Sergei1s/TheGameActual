@@ -13,8 +13,6 @@ public:
 		if (auto bus = dynamic_cast<Bus*>(obj))
 		{
 			obj->SetState(true);
-			//удалить все обьекты и вывести картинку - игра закончена
-
 		}
 	};
 

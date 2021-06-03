@@ -14,17 +14,11 @@ public:
 
 	void OnCollision(ICollider* obj) override
 	{
-		/*if (typeid(obj) == typeid(IFillable))
-		{
-			this->Fuel(
-				dynamic_cast<IFillable*>(obj));
-		}*/
 
 		if (auto bus = dynamic_cast<IFillable*>(obj))
 		{
 			this->Fuel(bus);
 			this->IsDestructed = true;
-			//удалить fueler
 		}
 	}
 

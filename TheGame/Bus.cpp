@@ -1,4 +1,5 @@
 ﻿#include "Bus.h"
+#include <iostream>
 
 
 Vector2f Bus::ToVector2f(Position pos)
@@ -25,33 +26,25 @@ Bus::Bus()
 void Bus::MoveUp() 
 {
 	this->MoveOn(Vector2f(0, -(*speed)));
-	/*sprite.move(Vector2f(0, -(*speed)));
-	Vector2f busPosition = sprite.getPosition();
-	pos = {(int)busPosition.x, (int)busPosition.y};*/
+	
 }
 
 void Bus::MoveDown()
 {
 	this->MoveOn(Vector2f(0, (*speed)));
-	/*sprite.move(Vector2f(0, (*speed)));
-	Vector2f busPosition = sprite.getPosition();
-	pos = { (int)busPosition.x, (int)busPosition.y };*/
+	
 }
 
 void Bus::MoveForward()
 {
 	this->MoveOn(Vector2f((*speed), 0));
-	/*sprite.move(Vector2f( (*speed),0));
-	Vector2f busPosition = sprite.getPosition();
-	pos = { (int)busPosition.x, (int)busPosition.y };*/
+	
 }
 
 void Bus::MoveBack()
 {
 	this->MoveOn(Vector2f(-(*speed), 0));
-	//sprite.move(this->ToVector2f(this->GetPosition()));
-	/*Vector2f busPosition = sprite.getPosition();
-	pos = { (int)busPosition.x, (int)busPosition.y };*/
+	
 }
 
 void Bus::MoveOn(Vector2f vectorPosition)
@@ -76,15 +69,10 @@ Sprite Bus::getSprite()
 void Bus::SetPosition(Bus::Position nextPosition)
 {
 	this->pos = nextPosition;
-	
 }
-
-
 
 Bus::Position Bus::GetPosition()
 {
-	cout <<"OLD x: "<< this->pos.x;
-	cout << "OLD y: " << this->pos.y;
 	return this->pos;
 }
 

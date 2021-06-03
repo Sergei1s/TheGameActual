@@ -1,6 +1,7 @@
 #pragma once
 #include "Bus.h"
-class LongDistanceBus : public Bus//,public DrawableObj, public ICollider, public IFillable
+#include <string>
+class LongDistanceBus : public Bus
 {
 public:
 	LongDistanceBus();
@@ -11,6 +12,6 @@ public:
 		currentFuel -= 0.01 * ((*speed)^2);
 	}
 private:
-	string LongDistanceBusTexturePath =  "D:\\University\\OOP\\The Game\\LongDistanceBus.png";
+	std::string LongDistanceBusTexturePath =  "D:\\University\\OOP\\The Game\\LongDistanceBus.png";
 };
 

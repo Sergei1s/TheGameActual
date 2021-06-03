@@ -21,10 +21,6 @@ auto ObjectPool::end()
 {
 	return pool.end();
 }
-//DrawableObj* ObjectPool::end()
-//{
-//	return *pool.end();
-//}
 
 
 int ObjectPool::GetSize()

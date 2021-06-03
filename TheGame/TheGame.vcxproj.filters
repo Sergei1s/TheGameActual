@@ -21,28 +21,13 @@
     <ClCompile Include="Bus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Point.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="EventHandler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="IMovable.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IPaintable.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Alien.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ColliderObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Drawer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Rectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="LongDistanceBus.cpp">
@@ -62,19 +47,7 @@
     <ClInclude Include="Bus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Point.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="EventHandler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="IMovable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ObserverPattern.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Alien.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Rectangle.h">
@@ -87,9 +60,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Drawer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IFilling.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ICollider.h">
@@ -113,5 +83,8 @@
     <ClInclude Include="BackGroundObj.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

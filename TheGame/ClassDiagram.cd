@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BackgroundObject" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAIAAAAAAAAAAIAAAAACAAAg=</HashCode>
+      <FileName>BackGroundObj.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bus" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="IFillable" ManuallyRouted="true">
+      <Path>
+        <Point X="5.25" Y="2.312" />
+        <Point X="5.25" Y="2.708" />
+        <Point X="3.5" Y="2.708" />
+        <Point X="3.5" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAMAIBCAACAAAAAYABIAAIAAAAEIAwAAYAAAABAAAAA=</HashCode>
+      <FileName>Bus.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Physics" Collapsed="true">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>ColliderObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fueler" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAECAIAAAAAAAAAAIgAAAAAAgAA=</HashCode>
+      <FileName>Fueler.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ICollider" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABEAAAAAAAAAgAAEAAAAAAAAAAAAAIAACAAAAAAA=</HashCode>
+      <FileName>ICollider.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IFillable" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQCAAACAAAAAAAAAAAAAAAEAAgA=</HashCode>
+      <FileName>IFillable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMovable" Collapsed="true">
+    <Position X="8.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IMovable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DrawableObj" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAIAAAAAAAAQAAIAAgIBAAAggAAAAAAAAAAAA=</HashCode>
+      <FileName>DrawableObj.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LongDistanceBus" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAGAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LongDistanceBus.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectPool" Collapsed="true">
+    <Position X="10.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAACAAAAAACAAAAABAAQAAAAAAAAAAgAAgAAAAA=</HashCode>
+      <FileName>Drawer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Drawer" Collapsed="true">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Drawer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Obstacle" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAIAAACAAAAAA=</HashCode>
+      <FileName>Obstacle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAABAAEAEAAAAgACAAAAAgAAQAAAAA=</HashCode>
+      <FileName>Player.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rectangle" Collapsed="true">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAIAAAAQAQIQDAIAAAAAgAAEAAAAwAAAAAAA=</HashCode>
+      <FileName>Rectangle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

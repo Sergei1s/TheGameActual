@@ -89,6 +89,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>D:\Libs\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -96,6 +97,9 @@
       <AdditionalLibraryDirectories>D:\Libs\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-audio-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -151,40 +155,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Alien.cpp" />
     <ClCompile Include="BackGroundObj.cpp" />
     <ClCompile Include="Bus.cpp" />
     <ClCompile Include="ColliderObject.cpp" />
-    <ClCompile Include="EventHandler.cpp" />
     <ClCompile Include="Fueler.cpp" />
     <ClCompile Include="IMovable.cpp" />
-    <ClCompile Include="IPaintable.cpp" />
     <ClCompile Include="LongDistanceBus.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Drawer.cpp" />
     <ClCompile Include="Obstacle.cpp" />
-    <ClCompile Include="Point.cpp" />
-    <ClCompile Include="Rectangle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Alien.h" />
     <ClInclude Include="BackGroundObj.h" />
     <ClInclude Include="Bus.h" />
-    <ClInclude Include="EventHandler.h" />
     <ClInclude Include="ColliderObject.h" />
     <ClInclude Include="Fueler.h" />
     <ClInclude Include="ICollider.h" />
     <ClInclude Include="IFillable.h" />
-    <ClInclude Include="IFilling.h" />
     <ClInclude Include="IMovable.h" />
     <ClInclude Include="DrawableObj.h" />
     <ClInclude Include="LongDistanceBus.h" />
-    <ClInclude Include="ObserverPattern.h" />
     <ClInclude Include="Drawer.h" />
     <ClInclude Include="Obstacle.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Point.h" />
     <ClInclude Include="Rectangle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,12 +1,10 @@
 ﻿#pragma once
 #include <SFML/Graphics.hpp>
-#include "Point.h"
 #include "DrawableObj.h"
-#include "ObserverPattern.h"
 #include <vector>
 #include "ICollider.h"
-#include "IFilling.h"
 #include "IFillable.h"
+#include <string>
 using namespace sf;
 
 
@@ -20,16 +18,8 @@ protected:
 	};
 	Position pos;
 	
-	/*auto operator+ (Position _pos)
-	{
-		Position pos;
-		pos.x += _pos.x ;
-		pos.y = _pos.y;
-		return pos;
-	}; */
-
-	//путь к текстуре для спрайта
-	string OriginalBusTexturePath = "D:\\University\\OOP\\The Game\\BUS.png";
+		//путь к текстуре для спрайта
+	std::string OriginalBusTexturePath = "D:\\University\\OOP\\The Game\\BUS.png";
 	
 	//основные параметры
 	int armor = 10, capacity = 10, defspeed = 10;
@@ -47,8 +37,6 @@ public:
 	{
 
 	}
-	//нужно это реализовать, но с другой стороны. т.е со стороны заправщика.
-	
 
 	Sprite getSprite();
 	void SetPosition(Position nextPosition);
@@ -57,7 +45,6 @@ public:
 	void MoveDown();
 	void MoveForward();
 	void MoveBack();
-
 	void MoveOn(Vector2f vectorPosition);
 	void MoveAt(Vector2f vectorPosition);
 };

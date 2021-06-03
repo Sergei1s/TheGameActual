@@ -1,15 +1,10 @@
 #pragma once
 
-#include "Point.h"
 #include <SFML\Window\Event.hpp>
 
 class IMovable
 {
 public:
-	Point position;
-
-
-
 
 	/*void MoveUp()
 	{

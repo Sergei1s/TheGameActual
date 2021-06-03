@@ -12,7 +12,6 @@ private:
     };
     Position pos;
 public:
-   // Rectangle(int _x1, int _y1, float height, float width);
     Rectangle(int _x1, int _y1, float height, float width)
     {
         pos.x1 = _x1;
